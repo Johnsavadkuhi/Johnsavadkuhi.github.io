@@ -53,25 +53,35 @@ useEffect(()=>{
         milligerams(mg).One cup of milk contains 299 mg of calcium and one cup 
         of juice contins 261 mg of calcium. which of the following inequalities 
         represents the possible number of cups of milk m and cups of juice ja 20 year old 
-        could drink in a day to meet or exceed the recommended daily calcium intake from these drinks 
+        could drink in a day to meet or exceed the
+         recommended daily calcium intake from these drinks 
         alone ? 
         </p>
         
           {/* <canvas id="myChart" width="400" height="300"></canvas> */}
           <Line data={chartData} className="report-chart" 
-          options={{ responsive:true  ,
-          title:{text:'Number Of Portable Media Players' , display:true,fontColor: "white" } , 
+          options={{ responsive:true  ,legend : { display:false }, 
+          title:{text:['Number Of Portable Media Players' , 'Sold WOrldwide Each Year from 2006 to 2011'] ,
+           display:true,fontColor:"white" , padding:6 } , 
           scales :{
 
             yAxes: [
               {
                 ticks:{
-                  autoSkip:true , maxTicksLimit:20 
+                  autoSkips:true , maxTicksLimit:9 
                 }, 
-                gridLines :{display:false}
+                gridLines :{display:true},
+                
               }
               
             ],
+            xAxes :[
+              {
+            
+                gridLines:{display:true}
+             
+            } 
+            ] , 
               
               }}}/>
       
