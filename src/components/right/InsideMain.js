@@ -11,7 +11,9 @@ const chart = () =>{
       data:[20,60,40,80] , 
       backgroundColor:["transparent"] ,
       borderWidth : 1 , 
-      borderColor: "white"
+      borderColor: "white",
+      lineTension:0 , 
+
 
     }]
   })
@@ -59,8 +61,8 @@ useEffect(()=>{
         </p>
         
           {/* <canvas id="myChart" width="400" height="300"></canvas> */}
-          <Line data={chartData} className="report-chart" 
-          options={{ responsive:true  ,legend : { display:false }, 
+          <Line data={chartData} 
+          options={{ responsive:true  ,legend : { display:false},  
           title:{text:['Number Of Portable Media Players' , 'Sold WOrldwide Each Year from 2006 to 2011'] ,
            display:true,fontColor:"white" , padding:6 } , 
           scales :{
@@ -84,7 +86,6 @@ useEffect(()=>{
             ] , 
               
               }}}/>
-      
 
         <div className="footer-main">
           <span>Tag 1 </span>
