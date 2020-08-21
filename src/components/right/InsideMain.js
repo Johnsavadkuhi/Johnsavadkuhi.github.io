@@ -8,11 +8,9 @@ const chart = () =>{
   setChartData({
     labels:['2015' , '2016' , '2017' , '2018'], 
     datasets : [{
-      label:'Number Of Portable Media Players ',
       data:[20,60,40,80] , 
       backgroundColor:["transparent"] ,
       borderWidth : 1 , 
-      fontColor : "white",
       borderColor: "white"
 
     }]
@@ -58,10 +56,25 @@ useEffect(()=>{
         could drink in a day to meet or exceed the recommended daily calcium intake from these drinks 
         alone ? 
         </p>
-        <div className="report-chart">
+        
           {/* <canvas id="myChart" width="400" height="300"></canvas> */}
-          <Line data={chartData} options={{responsive:true  , }}/>
-        </div>
+          <Line data={chartData} className="report-chart" 
+          options={{ responsive:true  ,
+          title:{text:'Number Of Portable Media Players' , display:true,fontColor: "white" } , 
+          scales :{
+
+            yAxes: [
+              {
+                ticks:{
+                  autoSkip:true , maxTicksLimit:20 
+                }, 
+                gridLines :{display:false}
+              }
+              
+            ],
+              
+              }}}/>
+      
 
         <div className="footer-main">
           <span>Tag 1 </span>
