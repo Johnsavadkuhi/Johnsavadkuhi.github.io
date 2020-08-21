@@ -1,0 +1,33 @@
+
+@mixin respond($br) {
+    @if $br == x-small {
+        
+        @media  (min-width: "0px") and (max-width:"280px"){
+            @content ; 
+        }
+    }
+    @if $br == small {
+        @media (min-width : "320px") and (max-width:"375px"){
+            @content; 
+        }
+    }
+    @if $br == medium {
+        @media (min-width:"375px") and (max-width:"425px"){@content; }
+    }
+    @if $br == normal {
+        @media(min-width: "425px") and (max-width :"768px"){@content; }
+    }
+    @if $br== large {
+        @media (min-width :"1024px") and (max-width:"1440px"){@content;}
+    }
+    @if $br == x-large {
+        @media (min-width:"1440px" )and (max-width:"2560px"){
+            @content; 
+        }
+    }
+    @if $br== xx-large{
+        @media (min-width:"2560px"){
+            @content; 
+        }
+    }
+}
