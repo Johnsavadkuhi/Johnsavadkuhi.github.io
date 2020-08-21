@@ -1,25 +1,75 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import {Line} from 'react-chartjs-2' ;
 function Insidemain() {
+
+const [chartData , setChartData] = useState({}); 
+
+const chart = () =>{
+  setChartData({
+    labels:['2015' , '2016' , '2017' , '2018'], 
+    datasets : [{
+      label:'Number Of Portable Media Players ',
+      data:[20,60,40,80] , 
+      backgroundColor:["transparent"] ,
+      borderWidth : 1 , 
+      fontColor : "white",
+      borderColor: "white"
+
+    }]
+  })
+}
+useEffect(()=>{
+
+  chart()
+  // var ctx = document.getElementById('myChart').getContext('2d');
+	// var chart = new Chart(ctx, {
+	// 	// The type of chart we want to create
+	// 	type: 'line',
+
+	// 	// The data for our dataset
+	// 	data: {
+	// 		labels: ['2015', '2016', '2017', '2018'],
+	// 		datasets: [{
+	// 			label: 'Number Of Portable Media Players',
+	// 			borderColor: 'rgb(255,255,255)',
+	// 			data: [20, 60, 35, 80, 20, 30, 45]
+	// 		}]
+	// 	},
+
+	// 	// Configuration options go here
+	// 	options: {
+	// 		legend: {
+	// 			labels: {
+	// 				fontColor: "white",
+	// 			}
+	// 		}
+	// 	}
+	// });
+} , [])
+
   return (
     <div className="inside-main">
       <div className="main-left">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent
-          tristique magna sit amet. Dictum at tempor commodo ullamcorper a lacus
-          vestibulum sed arcu. Quam adipiscing vitae proin sagittis nisl
-          rhoncus. Augue interdum
+        The recomended daily calcium intake for a 20-year old is 1000 
+        milligerams(mg).One cup of milk contains 299 mg of calcium and one cup 
+        of juice contins 261 mg of calcium. which of the following inequalities 
+        represents the possible number of cups of milk m and cups of juice ja 20 year old 
+        could drink in a day to meet or exceed the recommended daily calcium intake from these drinks 
+        alone ? 
         </p>
         <div className="report-chart">
-          <canvas id="myChart" width="400" height="300"></canvas>
+          {/* <canvas id="myChart" width="400" height="300"></canvas> */}
+          <Line data={chartData} options={{responsive:true  , }}/>
         </div>
+
         <div className="footer-main">
           <span>Tag 1 </span>
           <span>Tag 2 </span>
           <span>Tag 3 </span>
         </div>
       </div>
+
       <div className="main-left">
         <div></div>
         <div className="inputs">
