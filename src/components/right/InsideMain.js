@@ -3,7 +3,7 @@ import { Line } from "react-chartjs-2";
 function Insidemain() {
   const [chartData, setChartData] = useState({});
 
-  const chart = () => {
+  const chart = (canvas) => {
     setChartData({
       labels: ["2015", "2016", "2017", "2018"],
       datasets: [
@@ -17,32 +17,9 @@ function Insidemain() {
       ],
     });
   };
+  
   useEffect(() => {
     chart();
-    // var ctx = document.getElementById('myChart').getContext('2d');
-    // var chart = new Chart(ctx, {
-    // 	// The type of chart we want to create
-    // 	type: 'line',
-
-    // 	// The data for our dataset
-    // 	data: {
-    // 		labels: ['2015', '2016', '2017', '2018'],
-    // 		datasets: [{
-    // 			label: 'Number Of Portable Media Players',
-    // 			borderColor: 'rgb(255,255,255)',
-    // 			data: [20, 60, 35, 80, 20, 30, 45]
-    // 		}]
-    // 	},
-
-    // 	// Configuration options go here
-    // 	options: {
-    // 		legend: {
-    // 			labels: {
-    // 				fontColor: "white",
-    // 			}
-    // 		}
-    // 	}
-    // });
   }, []);
 
   return (
@@ -58,9 +35,10 @@ function Insidemain() {
         </p>
 
         {/* <canvas id="myChart" width="400" height="300"></canvas> */}
-        <Line
+        <Line 
           data={chartData}
           options={{
+            
             responsive: true,
             legend: { display: false },
             title: {
