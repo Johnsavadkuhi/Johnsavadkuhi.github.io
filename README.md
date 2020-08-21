@@ -17,4 +17,4 @@ it is because in this project we use sass instead of node-sass, node-sass does n
 
 after that run below command : 
 
- ## yarn start  
+ 
