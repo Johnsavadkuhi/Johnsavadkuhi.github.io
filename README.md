@@ -2,6 +2,10 @@
 
 ## This project is My AVL Exam. 
 
+## The page of this project 
+
+https://johnsavadkuhi.github.io 
+
 ## Clone the repo 
 
 git clone https://github.com/Johnsavadkuhi/Johnsavadkuhi.github.io.git
