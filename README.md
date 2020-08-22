@@ -2,6 +2,10 @@
 
 ## This project is My AVL Exam. 
 
+## The structure 
+
+![structure](https://user-images.githubusercontent.com/6722877/90966514-86015000-e4e8-11ea-936a-6cb088a4add8.png)
+
 ## The page of this project 
 
 https://johnsavadkuhi.github.io 
