@@ -1,9 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import App from './components/MainWrap';
+import Leftside from './components/left/Leftside';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('test mainwrap ', () => {
+
+  const {getByText}  = render(<Leftside/>)
+
 });

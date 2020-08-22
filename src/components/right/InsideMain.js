@@ -123,10 +123,10 @@ function Insidemain() {
         <div></div>
         <div className="inputs">
           <label>
-            <input type="text" placeholder="1" value="1" />
+            <input type="text" placeholder="1" defaultValue="1" />
           </label>
           <label>
-            <input type="text" placeholder="2" value="." />
+            <input type="text" placeholder="2" defaultValue="." />
           </label>
           <label>
             <input type="text" placeholder="3" />
