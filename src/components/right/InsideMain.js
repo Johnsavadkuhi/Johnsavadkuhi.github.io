@@ -8,18 +8,17 @@ function Insidemain() {
       labels: ["2015", "2016", "2017", "2018"],
       datasets: [
         {
-          data: [20, 60, 40, 80 ],
+          data: [20,60, 40, 80],
           backgroundColor: "transparent",
           borderWidth: 1,
           borderColor: "white",
           lineTension: 0,
-
+          pointBackgroundColor:"white" 
         },
-        
       ],
     });
   };
-  
+
   useEffect(() => {
     chart();
   }, []);
@@ -37,53 +36,79 @@ function Insidemain() {
         </p>
 
         {/* <canvas id="myChart" width="400" height="300"></canvas> */}
-        <div style={{width:"100%" , height:"100%" ,
-         background:"#181818" ,marginTop:"10px" , borderRadius :"1%", 
-      }}>
-        <Line  
-          data={chartData}
-          options={{
-            responsive: true,
-            legend: { display: false },
-            title: {
-              text: [
-                "Number Of Portable Media Players",' ',
-                "Sold WOrldwide Each Year from 2006 to 2011",
-              ],
-              display: true,
-              fontColor: "white",
-              padding: 15,
-              
-            },
-            scales: {
-              yAxes: [
-                {
-                  ticks: {
-                    autoSkips: true,
-                    maxTicksLimit: 5,
-                    beginAtZero: true,
-                    autoSkipPadding:20 
-                 
-                  },
-                  gridLines:{color:"hsl(100, 100%, 0%)"  , lineWidth:.5  , drawTicks:false }  ,
-                  scaleLabel:{labelString:"Number Sold (Millions)" ,display:true , padding: 20  }
-                },
-              ],
-              xAxes: [
-                {  
-                  ticks: 
-                  { 
-                    autoSkips: true, beginAtZero: true
-                   } ,
-                   gridLines:{color:"hsl(100, 100%, 0%)"  , lineWidth:.5  , 
-                  drawTicks:true  ,tickMarkLength:10 , drawOnChartArea:false }  , 
-                   offset:true
-
-                  }, 
-              ],
-            },
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            background: "#181818",
+            marginTop: "10px",
+            borderRadius: "1%",
           }}
-        />
+        >
+          <Line
+            data={chartData}
+            options={{
+              responsive: true,
+              legend: { display: false },
+              title: {
+                text: [
+                  "Number Of Portable Media Players",
+                  " ",
+                  "Sold WOrldwide Each Year from 2006 to 2011",
+                ],
+                display: true,
+                fontColor: "white",
+                padding: 15,
+              },
+              scales: {
+                yAxes: [
+                  {
+                    ticks: {
+                      
+                       
+                      padding: 10,
+                      autoSkips: true   ,
+                      beginAtZero: true, 
+                      maxTicksLimit: 20 , 
+                      autoSkipPadding: 20,
+                      stepSize:20,
+                    },
+                    gridLines: {
+
+                      color: "white",
+                      lineWidth: 0.2,
+                      drawTicks: false ,
+
+                      
+                    },
+                    scaleLabel: {
+                      labelString: "Number Sold (Millions)",
+                      display: true,
+                      padding: 20,
+                    },
+                  },
+                ],
+                xAxes: [
+                  {
+                    ticks: {
+                      autoSkips: true,
+                      beginAtZero: true,
+                      padding: 5,
+                    },
+                    gridLines: {
+                      color: "white",
+                      lineWidth: 0.2,
+                      drawTicks: true,
+                      tickMarkLength: 10,
+                      drawOnChartArea: false  ,
+                      tickMarkLength:10 ,
+                    },
+                    offset: true,
+                  },
+                ],
+              },
+            }}
+          />
         </div>
 
         <div className="footer-main">
