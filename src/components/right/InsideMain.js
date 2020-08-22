@@ -8,11 +8,12 @@ function Insidemain() {
       labels: ["2015", "2016", "2017", "2018"],
       datasets: [
         {
-          data: [20, 60, 40, 80],
+          data: [20, 60, 40, 80 ],
           backgroundColor: "transparent",
           borderWidth: 1,
           borderColor: "white",
           lineTension: 0,
+
         },
         
       ],
@@ -42,7 +43,6 @@ function Insidemain() {
         <Line  
           data={chartData}
           options={{
-            
             responsive: true,
             legend: { display: false },
             title: {
@@ -53,6 +53,7 @@ function Insidemain() {
               display: true,
               fontColor: "white",
               padding: 15,
+              
             },
             scales: {
               yAxes: [
@@ -61,20 +62,22 @@ function Insidemain() {
                     autoSkips: true,
                     maxTicksLimit: 5,
                     beginAtZero: true,
+                    autoSkipPadding:20 
+                 
                   },
-                  gridLines:{color:"hsl(100, 100%, 0%)"  , lineWidth:.5  , 
-                  drawTicks:true  ,tickMarkLength:10  } 
+                  gridLines:{color:"hsl(100, 100%, 0%)"  , lineWidth:.5  , drawTicks:false }  ,
+                  scaleLabel:{labelString:"Number Sold (Millions)" ,display:true , padding: 20  }
                 },
               ],
               xAxes: [
-                { 
+                {  
                   ticks: 
                   { 
                     autoSkips: true, beginAtZero: true
                    } ,
                    gridLines:{color:"hsl(100, 100%, 0%)"  , lineWidth:.5  , 
-                  drawTicks:true  ,tickMarkLength:10 , drawOnChartArea:false   }  , 
-                   offset:true  ,
+                  drawTicks:true  ,tickMarkLength:10 , drawOnChartArea:false }  , 
+                   offset:true
 
                   }, 
               ],
