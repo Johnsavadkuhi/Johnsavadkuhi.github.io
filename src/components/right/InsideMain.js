@@ -8,7 +8,7 @@ function Insidemain() {
       labels: ["2015", "2016", "2017", "2018"],
       datasets: [
         {
-          data: [20,60, 40, 80],
+          data: [20, 60 , 40,80],
           backgroundColor: "transparent",
           borderWidth: 1,
           borderColor: "white",
@@ -63,22 +63,22 @@ function Insidemain() {
               scales: {
                 yAxes: [
                   {
+
                     ticks: {
-                      
                        
+                      lineHeight:2 , source:"auto" , 
+                      min:0 , 
                       padding: 10,
-                      autoSkips: true   ,
-                      beginAtZero: true, 
-                      maxTicksLimit: 20 , 
-                      autoSkipPadding: 20,
-                      stepSize:20,
+                      autoSkips: false    ,
+                      beginAtZero: true , 
+                      stepSize:10,
+                      fontColor:"white"
                     },
                     gridLines: {
 
                       color: "white",
                       lineWidth: 0.2,
                       drawTicks: false ,
-
                       
                     },
                     scaleLabel: {
@@ -94,6 +94,7 @@ function Insidemain() {
                       autoSkips: true,
                       beginAtZero: true,
                       padding: 5,
+                      fontColor:"white"
                     },
                     gridLines: {
                       color: "white",
