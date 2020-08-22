@@ -62,7 +62,8 @@ function Insidemain() {
                     maxTicksLimit: 5,
                     beginAtZero: true,
                   },
-                  gridLines:{color:"hsl(100, 100%, 0%)" }
+                  gridLines:{color:"hsl(100, 100%, 0%)"  , lineWidth:.5  , 
+                  drawTicks:false  } 
                 },
               ],
               xAxes: [
