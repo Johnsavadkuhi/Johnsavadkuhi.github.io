@@ -2,6 +2,14 @@
 
 This project is My AVL Exam. 
 
+# Clone the repo 
+
+git clone https://github.com/Johnsavadkuhi/Johnsavadkuhi.github.io.git
+
+# change directory to project directory 
+
+cd johnsavadkuhi.github.io.git
+
 ## To run 
  
  The first step is running the below command : 
