@@ -63,7 +63,7 @@ function Insidemain() {
                     beginAtZero: true,
                   },
                   gridLines:{color:"hsl(100, 100%, 0%)"  , lineWidth:.5  , 
-                  drawTicks:false  } 
+                  drawTicks:true  ,tickMarkLength:10  } 
                 },
               ],
               xAxes: [
@@ -72,6 +72,8 @@ function Insidemain() {
                   { 
                     autoSkips: true, beginAtZero: true
                    } ,
+                   gridLines:{color:"hsl(100, 100%, 0%)"  , lineWidth:.5  , 
+                  drawTicks:true  ,tickMarkLength:10 , drawOnChartArea:false   }  , 
                    offset:true  ,
 
                   }, 
