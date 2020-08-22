@@ -1,12 +1,12 @@
-## My AVL Exam 
+# My AVL Exam 
 
-This project is My AVL Exam. 
+## This project is My AVL Exam. 
 
-# Clone the repo 
+## Clone the repo 
 
 git clone https://github.com/Johnsavadkuhi/Johnsavadkuhi.github.io.git
 
-# change directory to project directory 
+## change directory to project directory 
 
 cd johnsavadkuhi.github.io.git
 
