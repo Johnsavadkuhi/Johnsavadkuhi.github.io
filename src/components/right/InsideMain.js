@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
+import Mainfooter from "./MainFooter";
+import MainRight from './MainRight'; 
+
 function Insidemain() {
+  
   const [chartData, setChartData] = useState({});
 
   const chart = (canvas) => {
@@ -25,6 +29,7 @@ function Insidemain() {
 
   return (
     <div className="inside-main">
+      
       <div className="main-left">
         <p>
           The recomended daily calcium intake for a 20-year old is 1000
@@ -35,7 +40,6 @@ function Insidemain() {
           recommended daily calcium intake from these drinks alone ?
         </p>
 
-        {/* <canvas id="myChart" width="400" height="300"></canvas> */}
         <div
           style={{
             width: "100%",
@@ -112,34 +116,11 @@ function Insidemain() {
           />
         </div>
 
-        <div className="footer-main">
-          <span>Tag 1 </span>
-          <span>Tag 2 </span>
-          <span>Tag 3 </span>
-        </div>
+        <Mainfooter/>
       </div>
+      <MainRight/>
 
-      <div className="main-left">
-        <div></div>
-        <div className="inputs">
-          <label>
-            <input type="text" placeholder="1" defaultValue="1" />
-          </label>
-          <label>
-            <input type="text" placeholder="2" defaultValue="." />
-          </label>
-          <label>
-            <input type="text" placeholder="3" />
-          </label>
-          <label>
-            <input type="text" placeholder="4" />
-          </label>
-        </div>
-        <div className="buttons">
-          <button>Skip</button>
-          <button>Submit</button>
-        </div>
-      </div>
+    
     </div>
   );
 }
