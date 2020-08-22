@@ -9,11 +9,12 @@ function Insidemain() {
       datasets: [
         {
           data: [20, 60, 40, 80],
-          backgroundColor: ["transparent"],
+          backgroundColor: "transparent",
           borderWidth: 1,
           borderColor: "white",
           lineTension: 0,
         },
+        
       ],
     });
   };
