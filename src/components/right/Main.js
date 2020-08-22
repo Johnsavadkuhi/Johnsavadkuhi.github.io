@@ -13,7 +13,8 @@ function Main({children}) {
         <div className="main-header-right">
           <img src={Formula} alt="Formula" /> Formula
         </div>
-      </div>{children}
+      </div>
+      {children}
     </div>
   );
 }
