@@ -23,10 +23,9 @@ cd johnsavadkuhi.github.io.git
  before yarn start the project you should run below command : 
 
 ## cd src/Style 
-## sass --watch mainwrap.scss  css/mainwrap.css 
 
 it is because in this project we use sass instead of node-sass, node-sass does not support @use and @forward rules and we use @use rule in this project 
 
 after that run below command : 
 
- 
+ ## sass --watch mainwrap.scss  css/mainwrap.css 
