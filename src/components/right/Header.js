@@ -1,5 +1,4 @@
 import React from "react";
-import Like from '../../img/drop_down.svg' ; 
 import Iconbutton from "./IconButton";
 
 function Header() {
