@@ -70,10 +70,13 @@ a {
 
 .tags .tag {
   border: 2px solid white;
-  padding: 3px 15px 5px 15px;
   border-radius: 60px;
   margin: 0 5px;
   cursor: pointer;
+  background-color: transparent;
+  color: white;
+  width: auto;
+  padding: 5px 10px 5px 10px;
 }
 
 .tags .tag, .tags .tag span {
@@ -95,9 +98,9 @@ a {
 }
 
 .tags .tag img {
-  width: 10px;
-  height: 10px;
-  margin-left: 5px;
+  position: absolute;
+  top: 0;
+  margin-left: 10px;
 }
 
 .main {
