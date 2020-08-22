@@ -1,27 +1,34 @@
 import React from "react";
-import Like from '../../img/icons8_heart_1.svg' ; 
+import Like from '../../img/drop_down.svg' ; 
+import Iconbutton from "./IconButton";
 
 function Header() {
   return (
     <div className="header">
       <div className="tags">
-        <span className="tag">
+        {/* <button className="tag"> 
           <span>Popular</span>
 
+          <img src={Like} alt="like"/>
+        </button>
+        <button className="tag">
+          <span>Arithmetic</span>
           <img src={Like} alt="like" />
-        </span>
-        <span className="tag">
+        </button>
+        <button className="tag">
           <span>Popular</span>
           <img src={Like} alt="like" />
-        </span>
-        <span className="tag">
-          <span>Popular</span>
+        </button>
+        <button className="tag">
+          <span>More Filters</span>
           <img src={Like} alt="like" />
-        </span>
-        <span className="tag">
-          <span>Popular</span>
-          <img src={Like} alt="like" />
-        </span>
+        </button > */}
+
+        <Iconbutton>Popular</Iconbutton>
+        <Iconbutton>Arithmetic</Iconbutton>
+        <Iconbutton>Popular</Iconbutton>
+        <Iconbutton>MoreFilters</Iconbutton>
+        
       </div>
     </div>
   );
