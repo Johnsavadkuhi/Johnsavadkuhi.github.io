@@ -36,7 +36,10 @@ function Insidemain() {
         </p>
 
         {/* <canvas id="myChart" width="400" height="300"></canvas> */}
-        <Line 
+        <div style={{width:"100%" , height:"100%" ,
+         background:"#181818" ,marginTop:"10px" , borderRadius :"1%", 
+      }}>
+        <Line  
           data={chartData}
           options={{
             
@@ -44,12 +47,12 @@ function Insidemain() {
             legend: { display: false },
             title: {
               text: [
-                "Number Of Portable Media Players",
+                "Number Of Portable Media Players",' ',
                 "Sold WOrldwide Each Year from 2006 to 2011",
               ],
               display: true,
               fontColor: "white",
-              padding: 6,
+              padding: 15,
             },
             scales: {
               yAxes: [
@@ -59,7 +62,7 @@ function Insidemain() {
                     maxTicksLimit: 5,
                     beginAtZero: true,
                   },
-                    
+                  gridLines:{color:"hsl(100, 100%, 0%)" }
                 },
               ],
               xAxes: [
@@ -69,12 +72,13 @@ function Insidemain() {
                     autoSkips: true, beginAtZero: true
                    } ,
                    offset:true  ,
-                   
-                  }
+
+                  }, 
               ],
             },
           }}
         />
+        </div>
 
         <div className="footer-main">
           <span>Tag 1 </span>
