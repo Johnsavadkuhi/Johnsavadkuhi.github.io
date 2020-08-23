@@ -19,8 +19,8 @@ function Mainright() {
         </label>
       </div>
       <div className="buttons">
-        <button class="skip">Skip</button>
-        <button class="submit">Submit</button>
+        <button className="skip">Skip</button>
+        <button className="submit">Submit</button>
       </div>
     </div>
   );
