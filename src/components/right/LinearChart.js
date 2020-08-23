@@ -5,7 +5,7 @@ function LinearChart(){
 
     const [chartData, setChartData] = useState({});
 
-    const chart = (canvas) => {
+    const chart = () => {
       setChartData({
         labels: ["2015", "2016", "2017", "2018"],
         datasets: [
