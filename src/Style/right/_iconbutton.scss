@@ -1,0 +1,42 @@
+
+.tags .tag   {
+
+	border: 2px solid white;
+	// padding: 3px 15px 5px 15px;
+	border-radius: 60px;
+	margin: 0 5px;
+	cursor: pointer;
+	background-color: transparent ;
+	color : white ;
+	width:auto  ; 
+	
+	padding : 5px 10px 5px 10px ; 
+
+}
+
+.tags .tag, .tags .tag span {
+	transition: all 0.3s;
+}
+
+.tags .tag span {
+	color :white ; 
+	font-family: Ubuntu-Bold;
+	font-size: 13px;
+
+}
+
+.tags .tag:hover {
+	border: 2px solid #3EDCE9;
+}
+
+.tags .tag:hover span {
+	color: #3EDCE9;
+
+}
+
+.tags .tag img {
+	
+	position: absolute;
+	top:0 ; 
+	margin-left: 10px ;
+}

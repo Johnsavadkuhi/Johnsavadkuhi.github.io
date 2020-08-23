@@ -1,3 +1,17 @@
+@use 'leftrightcontainer' ; 
+@use 'left/left';
+@use 'right/right' ; 
+@use 'left/bottom'; 
+@use 'left/circleprogress'; 
+@use 'left/report';
+@use 'left/top'; 
+@use 'right/header'; 
+@use 'right/iconbutton'; 
+@use 'right/insidemain'; 
+@use 'right/main'; 
+@use 'right/mainfooter'; 
+@use 'right/mainright'; 
+@use 'right/mainleft'; 
 
 * {
 	box-sizing: border-box ;
@@ -11,152 +25,14 @@ html , body {
     width: 100%;
 	height: 100%;
 }
-.box {
-	display: flex;
-	height : 100vh; 
-} 
 
-a {
-	text-decoration: none;
-}
 
-.left  {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #181818;
-	width : 20%; 
-	min-width: 300px;
-	min-height: 100%;
-}
- 
-.right {
-    width : 80%; 
-	background-color: #2a2a2a;
-}
-.report {
-	margin: 30px 0;
-}
+// a {
+// 	text-decoration: none;
+// }
 
-.report .report-title, .report p {
-	font-size: 12px;
-	font-family: Ubuntu-Bold;
-	color: white;
-}
 
-.report p span {
-	font-size: 25px;
-}
 
-.top {
-	padding-top: 50px;
-}
-
-.bottom {
-	padding: 30px 0;
-	font-size: 14px;
-	color: #fff;
-	font-family: Ubuntu-Bold;
-}
-
-.header {
-	padding-top: 50px;
-	margin-left: 180px;
-	margin-bottom: 30px;
-}
-
-.tags .tag   {
-
-	border: 2px solid white;
-	// padding: 3px 15px 5px 15px;
-	border-radius: 60px;
-	margin: 0 5px;
-	cursor: pointer;
-	background-color: transparent ;
-	color : white ;
-	width:auto  ; 
-	
-	padding : 5px 10px 5px 10px ; 
-
-}
-
-.tags .tag, .tags .tag span {
-	transition: all 0.3s;
-}
-
-.tags .tag span {
-	color :white ; 
-	font-family: Ubuntu-Bold;
-	font-size: 13px;
-
-}
-
-.tags .tag:hover {
-	border: 2px solid #3EDCE9;
-}
-
-.tags .tag:hover span {
-	color: #3EDCE9;
-
-}
-
-.tags .tag img {
-	
-	position: absolute;
-	top:0 ; 
-	margin-left: 10px ;
-}
-
-.main {
-	width: 85%;
-	height: 80vh;
-	display: flex;
-	background-color: #2a2a2a;
-	box-shadow: 0 0 25px 5px #0a0a0a;
-	flex-direction: column;
-	padding: 20px 70px;
-	border-radius: 10px;
-	
-	margin : 0 auto ; 
-}
-
-.main-header {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	padding-bottom: 5px;
-	border-bottom: 1px solid rgb(66, 65, 65);
-}
-
-.main-header-left span {
-	color: #cfc900;
-	font-family: Ubuntu-Bold;
-	font-size: 12px;
-}
-
-.main-header-right {
-	padding: 7px 10px 7px 10px;
-	background: #1c1c1c;
-	color: white;
-	border-radius: 60px;
-	margin: 0 5px 7px 0 ;
-	font-family: Ubuntu-Bold;
-	font-size: 12px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-}
-
-.main-header-right img {
-	width: 10px;
-	height: 10px;
-	margin-right: 5px;
-}
-
-.main-left, .main-right {
-	width: 50%;
-}
 
 .main-right {
 	background: #1c1c1c;
@@ -166,201 +42,14 @@ a {
 
 }
 
-.main-left {
-	min-width: 400px;
-	padding: 0 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
 
-.main-left div {
-	height: 50%;
-	text-align: center;
-}
-
-.main-left .buttons {
-	display: flex;
-	align-items: flex-end;
-}
-
-.buttons button {
-	border: 2px solid #3498db;
-	border-radius: 50px;
-	margin: 0 10px;
-	padding: 5px 20px 7px 20px;
-	background: transparent;
-	font-family: Ubuntu-Bold;
-	color: white;
-	transition: all 0.3s;
-}
-
-.buttons button:hover {
-	background: #3498db;
-	color: white;
-}
-
-.inputs {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-}
-
-.inputs input {
-	width: 50px;
-	height: 50px;
-	color: #3498db;
-	margin: 10px;
-	border: 2px solid transparent;
-	border-radius: 5px;
-	background: #4a4a4a;
-	text-align: center;
-	font-family: Ubuntu-Bold;
-	font-size: 20px;
-	transition: all 0.3s;
-}
-
-.inputs input:focus {
-	border: 2px solid #3498db;
-}
-
-.inside-main {
-	margin-top: 20px;
-	display: flex;
-}
-
-.main-left p {
-	text-align: justify;
-	font-family: Ubuntu-Light;
-	line-height: 25px;
-	color: white;
-}
-
-.footer-main {
-	margin: 20px 0;
-}
-
-.footer-main span {
-	font-family: Ubuntu-Light;
-	margin: 0 5px;
-	border-radius: 5px;
-	padding: 5px 10px;
-	color: white;
-	background: rgb(20, 159, 106);
-	background: linear-gradient(90deg, rgba(20, 159, 106, 1) 0%, rgba(1, 186, 99, 1) 100%);
-}
-
-.pie-wrapper {
-	display: inline-block;
-	position: relative;
-	width: 200px;
-	height: 200px;
-	margin: 10px;
-	border: 10px solid #373737;
-	border-radius: 50%;
-}
-
-.pie-wrapper .pie {
-	clip: rect(0, 200px, 200px, 100px);
-	height: 200px;
-	position: absolute;
-	width: 200px;
-	margin: -10px 0 0 -10px
-}
-
-.pie-wrapper .pie .half-circle {
-	border: 3px solid #3498db;
-	clip: rect(0, 100px, 200px, 0);
-	height: 200px;
-	position: absolute;
-	width: 200px;
-	border-radius: 50%;
-}
-
-.pie-wrapper .label {
-	position: absolute;
-	color: white !important;
-	font-family: Ubuntu-Bold;
-	top: 5%;
-	left: 5%;
-	display: block;
-	width: 180px;
-	height: 180px;
-	cursor: default;
-	font-size: 3em;
-	line-height: 3em;
-	text-align: center;
-	border-radius: 50%; 
-
-}
-
-.pie-wrapper .label em {
-	padding-bottom: 20px;
-	color: white !important;
-	font-size: .45em;
-	vertical-align: super;
-	font-style: normal
-}
-
-.pie-wrapper .shadow {
-	width: 100%;
-	height: 100%;
-	border: 20px solid #bdc3c7;
-	border-radius: 50% ; 
-	
-}
-
-.pie-wrapper.progress-half .pie .right-side {
-	display: none
-}
-
-.pie-wrapper.progress-half .pie .half-circle {
-	border-style: solid;
-	border-image: -webkit-linear-graident(#ff0000, #ffff00)
-}
-
-.pie-wrapper.progress-half .pie .left-side, .pie-wrapper.progress-full .pie .left-side {
-	-webkit-transform: rotate(165deg);
-	-moz-transform: rotate(165deg);
-	transform: rotate(165deg)
-}
-
-.pie-wrapper.progress-full .pie .left-side {
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	transform: rotate(180deg)
-}
-
-.progress-full .text {
-	position: absolute;
-	color: white;
-	font-size: 12px;
-	font-family: Ubuntu-Bold;
-	top: 25%;
-	left: 35%;
-	
-}
-
-.pie-wrapper.progress-full .pie {
-	clip: inherit
-}
-
-.pie-wrapper.progress-full .pie .right-side {
-	display: block
-}
-
-.pie-wrapper.progress-full .pie .right-side {
-	-webkit-transform: rotate(300deg);
-	-moz-transform: rotate(300deg);
-	transform: rotate(300deg)
-}
 
 div, div:before, div:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box
 }
+
 @media only screen and (max-width: 1091px) {
 	.box {
 		flex-wrap: wrap;

@@ -1,0 +1,26 @@
+.main-left {
+	min-width: 400px;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.main-left div {
+	height: 50%;
+	text-align: center;
+}
+
+.main-left .buttons {
+	display: flex;
+	align-items: flex-end;
+}
+
+.main-left p {
+	text-align: justify;
+	font-family: Ubuntu-Light;
+	line-height: 25px;
+	color: white;
+}
+
