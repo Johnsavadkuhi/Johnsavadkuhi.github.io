@@ -1,0 +1,2 @@
+(this["webpackJsonpjohnsavadkuhi.github.io"]=this["webpackJsonpjohnsavadkuhi.github.io"]||[]).push([[6],{159:function(e,t,a){"use strict";a.r(t);var n=a(0),r=a.n(n);t.default=function(e){var t=e.text,a=e.percentage;return r.a.createElement(r.a.Fragment,null,r.a.createElement("div",{className:"report"},r.a.createElement("div",{className:"report-title"},t),r.a.createElement("p",null,r.a.createElement("span",null,a)," PROBLEMS")))}}}]);
+//# sourceMappingURL=6.95f53b2f.chunk.js.map
