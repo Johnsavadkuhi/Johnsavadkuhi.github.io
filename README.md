@@ -10,6 +10,10 @@
 
 https://johnsavadkuhi.github.io 
 
+## The performance is perfect
+ 
+<img width="1680" alt="Screen Shot 1399-06-02 at 15 09 42" src="https://user-images.githubusercontent.com/6722877/90976484-c09fd280-e552-11ea-9a2c-49cedd2814ee.png">
+
 ## Clone the repo 
 
 git clone https://github.com/Johnsavadkuhi/Johnsavadkuhi.github.io.git
