@@ -1,6 +1,12 @@
 import React from "react";
-import {Circleprogress , Report  , Bottom ,  Top } from ".";
+import loadable from '@loadable/component'
 
+//import {Circleprogress , Report  , Bottom ,  Top } from ".";
+const  Circleprogress = loadable(()=>import('./CircleProgress'));
+const  Report  = loadable(()=>import('./Report'));  
+const  Bottom  = loadable(()=>import('./Bottom'));  
+const  Top  = loadable(()=>import('./Top')); 
+ 
 function Left() {
   return (
     <>
