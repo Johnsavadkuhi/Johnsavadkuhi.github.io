@@ -1,6 +1,6 @@
 import React from "react";
 
-function Mainfooter() {
+function MainFooter() {
   return (
     <div className="footer-main">
       <span>Tag 1 </span>
@@ -10,4 +10,4 @@ function Mainfooter() {
   );
 }
 
-export default Mainfooter;
+export default MainFooter;
