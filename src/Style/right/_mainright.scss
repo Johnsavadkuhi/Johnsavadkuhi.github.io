@@ -1,10 +1,37 @@
 
+.main-right {
+	min-width: 400px;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end ;
+	justify-content: flex-end;
+	
+}
 
+
+.main-right div {
+	height: 50%;
+	text-align: center;
+}
+
+.main-right .buttons {
+	display: flex;
+	align-items: flex-end;
+	
+}
+
+// .main-right p {
+// 	text-align: justify;
+// 	font-family: Ubuntu-Light;
+// 	line-height: 25px;
+// 	color: white;
+// }
 
 .inputs {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 
 }
 
@@ -20,12 +47,21 @@
 	font-family: Ubuntu-Bold;
 	font-size: 20px;
 	transition: all 0.3s;
+	
 }
 
 .inputs input:focus {
 	border: 2px solid #3498db;
 }
 
+.buttons .submit{
+	margin-right: auto;
+	align-self: flex-end; 
+
+}
+.buttons .skip { 
+	margin-right: auto ;
+}
 .buttons button {
 	border: 2px solid #3498db;
 	border-radius: 50px;
@@ -35,6 +71,7 @@
 	font-family: Ubuntu-Bold;
 	color: white;
 	transition: all 0.3s;
+	margin-right: auto ; 
 }
 
 .buttons button:hover {
