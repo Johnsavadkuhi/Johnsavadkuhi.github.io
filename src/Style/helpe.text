@@ -1,4 +1,0 @@
-
-i use sass package directly to use @use rule and i have installed node-sass package 
-but it does not support @use rule and using @import decrese performance and makes styles hard
-so i have to remove node-sass package in this project. 
