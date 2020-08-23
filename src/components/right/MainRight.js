@@ -2,7 +2,7 @@ import React from "react";
 
 function Mainright() {
   return (
-    <div className="main-left">
+    <div className="main-right">
       <div></div>
       <div className="inputs">
         <label>
@@ -19,8 +19,8 @@ function Mainright() {
         </label>
       </div>
       <div className="buttons">
-        <button>Skip</button>
-        <button>Submit</button>
+        <button class="skip">Skip</button>
+        <button class="submit">Submit</button>
       </div>
     </div>
   );
