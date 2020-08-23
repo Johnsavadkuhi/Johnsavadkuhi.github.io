@@ -1,6 +1,10 @@
 import React from "react";
-import MainFooter  from "./MainFooter";
-import LinearChart from "./LinearChart";
+import loadable from '@loadable/component'
+
+// import MainFooter  from "./MainFooter";
+// import LinearChart from "./LinearChart";
+const MainFooter = loadable(()=>import('./MainFooter')); 
+const LinearChart = loadable(()=>import('./LinearChart')); 
 
 function MainLeft() {
 
