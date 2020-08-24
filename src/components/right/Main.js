@@ -11,7 +11,7 @@ function Main({ children }) {
           <FontAwesomeIcon
             style={{ color: "white", fontSize: "12px" }}
             icon={faCalculator}
-          />{" "}
+          />
           <span style={{ marginLeft: "5px" }}> Arithmetic</span> <span> </span>{" "}
           <span style={{ color: "white" }}> • </span> <span>Real Problem</span>
         </div>
