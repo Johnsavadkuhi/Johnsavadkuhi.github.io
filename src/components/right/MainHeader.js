@@ -1,4 +1,7 @@
 import React from "react";
+import Formula from "../../img/icons8_pi.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalculator } from "@fortawesome/free-solid-svg-icons";
 
 function MainHeader() {
   return (
