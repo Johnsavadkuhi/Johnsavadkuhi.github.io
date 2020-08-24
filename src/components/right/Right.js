@@ -1,5 +1,5 @@
 import React from "react";
-import {Header , InsideMain ,Main } from ".";
+import { Header, InsideMain, Main } from ".";
 
 function Right() {
   return (
